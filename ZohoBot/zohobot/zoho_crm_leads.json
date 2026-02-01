@@ -1,0 +1,287 @@
+[
+  {
+    "ts": "2026-01-06T16:27:22.819Z",
+    "payload": {
+      "data": [
+        {
+          "Last_Name": "Visitor-sess",
+          "Description": "Intent: buy. Source: Hackathon Bot.",
+          "Lead_Source": "Zoho Bot",
+          "Lead_Status": "Pre-Qualified",
+          "Scoring": 30,
+          "API_KEY_VERIFICATION": "SUCCESS"
+        }
+      ]
+    }
+  },
+  {
+    "ts": "2026-01-06T16:27:29.181Z",
+    "payload": {
+      "data": [
+        {
+          "Last_Name": "Visitor-sess",
+          "Description": "Intent: buy. Source: Hackathon Bot.",
+          "Lead_Source": "Zoho Bot",
+          "Lead_Status": "Pre-Qualified",
+          "Scoring": 50,
+          "API_KEY_VERIFICATION": "SUCCESS"
+        }
+      ]
+    }
+  },
+  {
+    "ts": "2026-01-06T17:20:51.501Z",
+    "payload": {
+      "data": [
+        {
+          "Last_Name": "Visitor-sess",
+          "Description": "Intent: buy. Source: Hackathon Bot.",
+          "Lead_Source": "Zoho Bot",
+          "Lead_Status": "Pre-Qualified",
+          "Scoring": 40,
+          "API_KEY_VERIFICATION": "SUCCESS"
+        }
+      ]
+    }
+  },
+  {
+    "ts": "2026-01-06T17:22:26.100Z",
+    "payload": {
+      "data": [
+        {
+          "Last_Name": "Visitor-sess",
+          "Description": "Intent: buy. Source: Hackathon Bot.",
+          "Lead_Source": "Zoho Bot",
+          "Lead_Status": "Pre-Qualified",
+          "Scoring": 75,
+          "API_KEY_VERIFICATION": "SUCCESS"
+        }
+      ]
+    }
+  },
+  {
+    "ts": "2026-01-06T17:22:28.443Z",
+    "payload": {
+      "data": [
+        {
+          "Last_Name": "Visitor-sess",
+          "Description": "Intent: buy. Source: Hackathon Bot.",
+          "Lead_Source": "Zoho Bot",
+          "Lead_Status": "Pre-Qualified",
+          "Scoring": 95,
+          "API_KEY_VERIFICATION": "SUCCESS"
+        }
+      ]
+    }
+  },
+  {
+    "ts": "2026-01-06T17:22:30.600Z",
+    "payload": {
+      "data": [
+        {
+          "Last_Name": "Visitor-sess",
+          "Description": "Intent: buy. Source: Hackathon Bot.",
+          "Lead_Source": "Zoho Bot",
+          "Lead_Status": "Pre-Qualified",
+          "Scoring": 115,
+          "API_KEY_VERIFICATION": "SUCCESS"
+        }
+      ]
+    }
+  },
+  {
+    "ts": "2026-01-06T17:22:33.755Z",
+    "payload": {
+      "data": [
+        {
+          "Last_Name": "Visitor-sess",
+          "Description": "Intent: buy. Source: Hackathon Bot.",
+          "Lead_Source": "Zoho Bot",
+          "Lead_Status": "Pre-Qualified",
+          "Scoring": 135,
+          "API_KEY_VERIFICATION": "SUCCESS"
+        }
+      ]
+    }
+  },
+  {
+    "ts": "2026-01-06T17:22:35.066Z",
+    "payload": {
+      "data": [
+        {
+          "Last_Name": "Visitor-sess",
+          "Description": "Intent: buy. Source: Hackathon Bot.",
+          "Lead_Source": "Zoho Bot",
+          "Lead_Status": "Pre-Qualified",
+          "Scoring": 155,
+          "API_KEY_VERIFICATION": "SUCCESS"
+        }
+      ]
+    }
+  },
+  {
+    "ts": "2026-01-06T17:28:36.428Z",
+    "payload": {
+      "data": [
+        {
+          "Last_Name": "Visitor-sess",
+          "Description": "Intent: buy. Source: Hackathon Bot.",
+          "Lead_Source": "Zoho Bot",
+          "Lead_Status": "Pre-Qualified",
+          "Scoring": 40,
+          "API_KEY_VERIFICATION": "SUCCESS"
+        }
+      ]
+    }
+  },
+  {
+    "ts": "2026-01-06T17:28:38.746Z",
+    "payload": {
+      "data": [
+        {
+          "Last_Name": "Visitor-sess",
+          "Description": "Intent: buy. Source: Hackathon Bot.",
+          "Lead_Source": "Zoho Bot",
+          "Lead_Status": "Pre-Qualified",
+          "Scoring": 60,
+          "API_KEY_VERIFICATION": "SUCCESS"
+        }
+      ]
+    }
+  },
+  {
+    "ts": "2026-01-06T17:29:06.761Z",
+    "payload": {
+      "data": [
+        {
+          "Last_Name": "Visitor-sess",
+          "Description": "Intent: buy. Source: Hackathon Bot.",
+          "Lead_Source": "Zoho Bot",
+          "Lead_Status": "Pre-Qualified",
+          "Scoring": 80,
+          "API_KEY_VERIFICATION": "SUCCESS"
+        }
+      ]
+    }
+  },
+  {
+    "ts": "2026-01-06T17:34:28.783Z",
+    "payload": {
+      "data": [
+        {
+          "Last_Name": "Visitor-sess",
+          "Description": "Intent: buy. Source: Hackathon Bot.",
+          "Lead_Source": "Zoho Bot",
+          "Lead_Status": "Pre-Qualified",
+          "Scoring": 35,
+          "API_KEY_VERIFICATION": "SUCCESS"
+        }
+      ]
+    }
+  },
+  {
+    "ts": "2026-01-06T17:34:40.926Z",
+    "payload": {
+      "data": [
+        {
+          "Last_Name": "Visitor-sess",
+          "Description": "Intent: buy. Source: Hackathon Bot.",
+          "Lead_Source": "Zoho Bot",
+          "Lead_Status": "Pre-Qualified",
+          "Scoring": 55,
+          "API_KEY_VERIFICATION": "SUCCESS"
+        }
+      ]
+    }
+  },
+  {
+    "ts": "2026-01-06T17:41:04.252Z",
+    "payload": {
+      "data": [
+        {
+          "Last_Name": "Visitor-sess",
+          "Description": "Intent: buy. Source: Hackathon Bot.",
+          "Lead_Source": "Zoho Bot",
+          "Lead_Status": "Pre-Qualified",
+          "Scoring": 20,
+          "API_KEY_VERIFICATION": "SUCCESS"
+        }
+      ]
+    }
+  },
+  {
+    "ts": "2026-01-06T17:41:48.773Z",
+    "payload": {
+      "data": [
+        {
+          "Last_Name": "Visitor-sess",
+          "Description": "Intent: buy. Source: Hackathon Bot.",
+          "Lead_Source": "Zoho Bot",
+          "Lead_Status": "Pre-Qualified",
+          "Scoring": 90,
+          "API_KEY_VERIFICATION": "SUCCESS"
+        }
+      ]
+    }
+  },
+  {
+    "ts": "2026-01-06T18:16:12.754Z",
+    "payload": {
+      "data": [
+        {
+          "Last_Name": "Visitor-sess",
+          "Description": "Intent: buy. Source: Hackathon Bot.",
+          "Lead_Source": "Zoho Bot",
+          "Lead_Status": "Pre-Qualified",
+          "Scoring": 45,
+          "API_KEY_VERIFICATION": "SUCCESS"
+        }
+      ]
+    }
+  },
+  {
+    "ts": "2026-01-06T18:16:23.141Z",
+    "payload": {
+      "data": [
+        {
+          "Last_Name": "Visitor-sess",
+          "Description": "Intent: buy. Source: Hackathon Bot.",
+          "Lead_Source": "Zoho Bot",
+          "Lead_Status": "Pre-Qualified",
+          "Scoring": 75,
+          "API_KEY_VERIFICATION": "SUCCESS"
+        }
+      ]
+    }
+  },
+  {
+    "ts": "2026-01-06T18:22:07.865Z",
+    "payload": {
+      "data": [
+        {
+          "Last_Name": "Visitor-sess",
+          "Description": "Intent: buy. Source: Hackathon Bot.",
+          "Lead_Source": "Zoho Bot",
+          "Lead_Status": "Pre-Qualified",
+          "Scoring": 35,
+          "API_KEY_VERIFICATION": "SUCCESS"
+        }
+      ]
+    }
+  },
+  {
+    "ts": "2026-01-06T18:22:15.286Z",
+    "payload": {
+      "data": [
+        {
+          "Last_Name": "Visitor-sess",
+          "Description": "Intent: buy. Source: Hackathon Bot.",
+          "Lead_Source": "Zoho Bot",
+          "Lead_Status": "Pre-Qualified",
+          "Scoring": 65,
+          "API_KEY_VERIFICATION": "SUCCESS"
+        }
+      ]
+    }
+  }
+]

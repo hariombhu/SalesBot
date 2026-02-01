@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zoho Hackathon AI Bot Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <h1>AI Customer Support Bot</h1>
+            <p>Zoho Hackathon Demo Project</p>
+        </div>
+        <button id="toggle-dashboard" class="dashboard-toggle-btn">Show Live Intelligence</button>
+    </header>
+
+    <!-- Main Section -->
+    <main class="container">
+
+        <!-- Live Intelligence Dashboard (Hidden by default, toggled via button) -->
+        <aside id="dashboard" class="dashboard-panel" aria-hidden="true">
+            <div class="dashboard-card">
+                <h3>Live Intent</h3>
+                <div id="dash-intent" class="dash-value">Waiting...</div>
+            </div>
+            <div class="dashboard-card">
+                <h3>Sentiment</h3>
+                <div id="dash-sentiment" class="dash-value">Neutral</div>
+                <div class="sentiment-bar">
+                    <div id="dash-sentiment-fill" style="width: 50%"></div>
+                </div>
+            </div>
+            <div class="dashboard-card">
+                <h3>Lead Score</h3>
+                <div id="dash-score" class="dash-value">0</div>
+            </div>
+            <div class="dashboard-card full">
+                <h3>Reasoning Engine</h3>
+                <pre id="dash-reason">Analysis logs will appear here...</pre>
+            </div>
+        </aside>
+
+        <section class="intro">
+            <h2>About the Project</h2>
+            <p>
+                This website demonstrates an AI-powered chatbot integrated using
+                Zoho SalesIQ. The bot assists users, answers queries, and captures leads
+                automatically for businesses.
+            </p>
+        </section>
+
+        <section class="features">
+            <h2>Bot Features</h2>
+            <ul>
+                <li>24/7 automated customer support</li>
+                <li>FAQ and product assistance</li>
+                <li>Lead capture (name, email, requirement)</li>
+                <li>CRM integration (Zoho CRM)</li>
+                <li>Smart escalation to human agent</li>
+            </ul>
+        </section>
+
+        <section class="products">
+            <h2>Demo Catalog — Buy & Sell Flow</h2>
+            <div class="product-list">
+                <div class="product" data-product="Alpha Widget">
+                    <strong>Alpha Widget</strong>
+                    <p>Starter widget — best for small teams. $29</p>
+                    <button class="buy-now" data-product="Alpha Widget">Buy</button>
+                </div>
+                <div class="product" data-product="Beta Pack">
+                    <strong>Beta Pack</strong>
+                    <p>Pro pack — includes integrations. $79</p>
+                    <button class="buy-now" data-product="Beta Pack">Buy</button>
+                </div>
+                <div class="product" data-product="Gamma Suite">
+                    <strong>Gamma Suite</strong>
+                    <p>Enterprise tools — custom pricing</p>
+                    <button class="buy-now" data-product="Gamma Suite">Buy</button>
+                </div>
+            </div>
+            <p class="small">Tip: Click a product's Buy button or open the chat and say "I want to buy" to start the
+                commerce flow.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 Zoho Hackathon Team | Student Project</p>
+        <button id="support-icon" class="support-icon" aria-label="Open support chat">💬 Support</button>
+    </footer>
+
+    <!-- Local ZohoBot Widget -->
+    <div id="zobot" class="zobot" aria-hidden="false">
+        <button class="zobot-toggle" aria-label="Open chat">
+            <span class="icon">💬</span>
+        </button>
+        <div class="zobot-window" aria-hidden="true">
+            <div class="zobot-header">
+                <div class="header-left">
+                    <strong>ZohoBot</strong>
+                    <span class="status-dot"></span>
+                </div>
+                <div class="zobot-header-controls">
+                    <span id="lead-score-badge" title="Current lead score">Lead: 0</span>
+                    <button id="zobot-history-toggle" title="Show history" aria-label="Toggle message history">📜</button>
+                    <button id="zobot-escalate" title="Escalate to human" aria-label="Escalate to human">🧑‍💼</button>
+                    <button class="zobot-close" aria-label="Close chat">✕</button>
+                </div>
+            </div>
+            <div class="zobot-messages" role="log" aria-live="polite"></div>
+            <div class="zobot-quick-replies" aria-hidden="false">
+                <button data-qr="pricing">Pricing</button>
+                <button data-qr="features">Features</button>
+                <button data-qr="trial">Free trial</button>
+                <button data-qr="contact">Contact sales</button>
+                <button data-qr="buy">Buy</button>
+                <button data-qr="sell">Sell</button>
+            </div>
+            <!-- Commerce quick replies will kick off Buy & Sell demo flows: 'Buy' -> buyer flow, 'Sell' -> seller onboarding -->
+            <form class="zobot-form" onsubmit="return false;">
+                <input type="text" class="zobot-input" placeholder="Type or use voice..."
+                    aria-label="Type your message" />
+
+                <!-- Voice Input Button -->
+                <button type="button" id="zobot-voice" class="zobot-icon-btn" title="Voice Input"
+                    aria-label="Voice Input">🎤</button>
+
+                <!-- hidden file input for product image uploads -->
+                <input type="file" id="zobot-file" accept="image/*" style="display:none" />
+                <button class="zobot-upload-btn zobot-icon-btn" type="button" id="zobot-upload"
+                    title="Upload product image" aria-label="Upload image">📎</button>
+                <button class="zobot-send" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Escalation Popup Modal -->
+    <div id="escalation-modal" class="escalation-modal">
+        <div class="escalation-modal-content">
+            <button class="escalation-close" aria-label="Close modal">&times;</button>
+            <div class="escalation-header">
+                <div class="escalation-avatar">🧑‍💼</div>
+                <h2 id="escalation-name">Executive Name</h2>
+            </div>
+            <div class="escalation-message">
+                <p id="escalation-text">Your executive is ready to contact you now. Initiate talk whenever you're free!</p>
+            </div>
+            <div class="escalation-actions">
+                <button id="escalation-initiate" class="escalation-btn-primary">Initiate Call</button>
+                <button id="escalation-later" class="escalation-btn-secondary">Contact Later</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Zoho SalesIQ Widget
+    <script type="text/javascript">
+        var $zoho = $zoho || {};
+        $zoho.salesiq = $zoho.salesiq || { widgetcode: "YOUR_WIDGET_CODE", values: {}, ready: function () {} };
+        var d = document;
+        var s = d.createElement("script"); s.type = "text/javascript"; s.defer = true; s.src = "https://salesiq.zoho.com/widget";
+        var t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(s, t);
+    </script>
+    -->
+
+    <!-- JS -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

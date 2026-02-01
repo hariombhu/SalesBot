@@ -1,0 +1,13 @@
+{
+  "name": "zohobot-demo-server",
+  "version": "1.0.0",
+  "description": "Demo server to simulate Zoho CRM and Inventory API endpoints for the Zoho Hackathon project",
+  "main": "demo_server.js",
+  "scripts": {
+    "start": "node demo_server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.22.1"
+  }
+}
