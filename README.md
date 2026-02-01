@@ -100,4 +100,3 @@ zoho-hackathon-chatbot/
 
 ---
 
-Good luck with the hackathon — the code is modular and commented for easy explanation to judges. You can use the demo server to show real payloads (without calling Zoho's live APIs) or replace the simulated calls with a server-side integration that calls Zoho CRM / Zoho Inventory when you have OAuth credentials.
